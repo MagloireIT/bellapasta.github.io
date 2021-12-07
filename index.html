@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bella Pasta</title>
+ 
+  <link rel="icon" href="img/Bella_Pasta1.png">
+
+
+<!--------------------------------------------------------------------- STYLE ------------------------------------------------------------------------->
+
+<style>
+  html {
+    scroll-behavior: smooth;
+}
+
+
+
+body {
+    padding: 0;
+    margin: 0;
+    
+}
+
+
+header {
+    background-image: url(img/header.jpg);
+    height:970px;
+    background-size: cover;
+    display: flex;
+
+}
+
+
+nav {
+    
+   background-color: #B98D25;
+   background-repeat: no-repeat;
+   display: flex;
+   flex-direction: column;
+   flex-wrap: nowrap;
+   align-items: center;
+   height: 100%;
+   width: 350px;
+   position: fixed;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+}
+
+a:hover {
+    color: rgb(255, 216, 131);
+   
+    
+}
+
+li:hover {
+    border-bottom: 2px solid;
+ 
+
+    
+}
+
+li {
+    
+    padding: 25px;
+    font-size:20px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: 0px solid;
+    transition: 0.2s;
+}
+
+#namebrand {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.logo {
+    text-align: center;
+}
+
+.logo img {
+    width: 100px;
+
+    
+}
+
+.facebook {
+    padding-top: 5px;
+    padding-left: 5px;
+}
+.facebook a img {
+    width: 36px;
+
+}
+
+.reseau {
+    padding: 40px;
+    display: flex;
+}
+
+.reseau img {
+    width: 50px;
+    padding-right:10px ;
+}
+
+#Hello {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(117, 117, 117, 0.5);
+    width: 25em;
+    padding-top: 155px;
+    padding-left: 25px;
+    padding-right: 25px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 350px;
+    
+}
+
+#Hello p {
+    font-size: 25px;
+}
+
+
+main {
+    margin-left: 350px;
+}
+
+#quisommesnous {
+    height:970px;
+    background-image: url(img/quisommesnous.jpg);
+    background-size: cover;
+    display: flex;
+}
+
+.explication p {
+    font-size: 25px;
+
+}
+
+.explication {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(117, 117, 117, 0.5);
+    width: 25em;
+    padding-top: 155px;
+    padding-left: 25px;
+    padding-right: 25px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#qualité {
+    height:970px;
+    background-image: url(img/blé.jpg);
+    background-size: cover;
+    display: flex;
+    z-index: 35;
+}
+
+.qualité1 p {
+    font-size: 25px;
+}
+
+.qualité1{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(117, 117, 117, 0.5);
+    width: 25em;
+    padding-top: 155px;
+    padding-left: 25px;
+    padding-right: 25px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#produits {
+    height:970px;
+    overflow: hidden;
+}
+
+.Patafix {
+    width: 100em;
+    transform: rotate(-75deg);
+    display: block;
+    position: relative;
+    left: 600px;
+    bottom: 1000px;
+    
+}
+.pate1 {
+    position: relative;
+    display: inline;
+    top: 80px;
+    left: 80px;
+    
+    
+}
+
+.patpat1 {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+}
+
+.patpat2 {
+    position: relative;
+    margin-left: 65px;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    z-index: 35;
+
+}
+
+
+.pate2 {
+    position: relative;
+    
+    top: 150px;
+    left: 280px;
+    z-index: 35;
+    
+    
+}
+
+.pate2 img {
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+}
+
+
+#engagements {
+    height:970px;
+    background-image: url(img/tracteur.jpg);
+    background-size: cover;
+    display: flex;
+    z-index: 35;
+}
+
+.engagements1 {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(117, 117, 117, 0.5);
+    width: 25em;
+    padding-top: 155px;
+    padding-left: 25px;
+    padding-right: 25px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.engagements1 p {
+    font-size: 25px;
+
+}
+
+.mobile {
+    display: none;
+    background-color: #B98D25;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    height: 100%;
+    width: 70px;
+    position: fixed;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.reseaumobile {
+    padding: 20px;
+    display: block;
+    text-align: center;
+}
+
+.reseaumobile img {
+    width: 50px;
+    padding-right:10px ;
+
+   
+}
+
+.mobile a img:hover {
+    transform: scale(1.1);
+    
+}
+
+
+
+/*---     MEDIA QUERIES --------------------------------------- */
+
+@media screen and (max-width: 1200px) {
+    
+nav {
+    
+    background-color: #B98D25;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    height: 100%;
+    width: 300px;
+    position: fixed;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+ }
+
+
+ #Hello {
+    
+    width: 20em;
+    
+    margin-left: 300px;
+    
+}
+
+.explication {
+    width: 20em;
+   
+}
+
+
+ main {
+    margin-left: 300px;
+}
+
+.qualité1{
+    width: 20em;
+   
+}
+
+.engagements1 {
+    width: 20em; 
+}
+
+
+.Patafix {
+    width: 100em;
+    transform: rotate(-75deg);
+    display: block;
+    position: relative;
+    left: 100px;
+    bottom: 500px;
+    
+}
+.pate1 {
+    position: relative;
+    display: inline;
+    top: 80px;
+    left: 80px;
+    z-index: 35;
+    
+}
+
+.patpat1 {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+.patpat2 {
+    position: relative;
+    margin-left: 65px;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    z-index: 35;
+
+}
+
+
+.pate2 {
+    position: relative;
+    top: 150px;
+    left: 280px;
+    z-index: 35;
+    
+    
+}
+
+.pate2 img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+
+ 
+    
+  }
+
+
+
+/* --------------------------------------------------- MOBILE ---------------------------------------------------------------- */
+
+  @media screen and (max-width: 768px) {
+    
+    nav {  
+       display:none;
+
+     }
+
+     .mobile {
+         display: flex;
+     }
+
+     .logo {
+        text-align: center;
+    }
+    
+    .logo img {
+        width: 50px; 
+        transition: all .2s ease-in-out;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    ul img {
+        width: 40px;
+        transition: all .2s ease-in-out;
+
+    }
+
+    #namebrand {
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        font-weight: 500;
+        font-size: 20px;
+    }
+
+
+    header {
+        background-image: url(img/header.jpg);
+        height:812px;
+        background-size: cover;
+        display: flex;
+    
+    }
+    
+    
+     #Hello {
+        
+    width: 12em;
+    margin-left: 70px;
+    padding-top: 100px;
+    padding-left: 25px;
+    padding-right: 25px;
+        
+    }
+
+    #Hello p {
+        font-size: 17px;
+    }
+    
+    #quisommesnous {
+        height:812px;
+        background-image: url(img/quisommesnous.jpg);
+        background-size: cover;
+        display: flex;
+    }
+
+    .explication p {
+        font-size: 17px;
+
+    }
+    
+    .explication {
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(117, 117, 117, 0.5);
+        width: 12em;
+        padding-top: 100px;
+        padding-left: 25px;
+        padding-right: 25px;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    
+     main {
+        margin-left: 70px;
+    }
+
+
+    #qualité {
+        height:812px;
+        background-image: url(img/blé.jpg);
+        background-size: cover;
+        display: flex;
+        z-index: 35;
+    }
+    
+    .qualité1 {
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(117, 117, 117, 0.5);
+        width: 12em;
+        padding-top: 100px;
+        padding-left: 25px;
+        padding-right: 25px;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .qualité1 p {
+        font-size: 17px;
+    }
+    
+
+    #produits {
+        height:812px;
+        overflow: hidden;
+    }
+    
+    
+    .Patafix {
+        width: 40em;
+        transform: rotate(-45deg);
+        display: block;
+        position: relative;
+        left: 0px;
+        bottom: 50px;
+        
+        
+    }
+    .pate1 {
+        position: relative;
+        display: inline;
+        top: 80px;
+        left: 80px;
+        z-index: 35;
+        
+    }
+    
+    .patpat1 {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+    
+    .patpat2 {
+        position: relative;
+        margin-left: 45px;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        z-index: 35;
+    
+    }
+    
+    
+    .pate2 {
+        position: relative;
+        top: 100px;
+        left: 70px;
+        z-index: 35;
+        
+        
+    }
+    
+    .pate2 img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+    
+    #engagements {
+        height:812px;
+        background-image: url(img/tracteur.jpg);
+        background-size: cover;
+        display: flex;
+        z-index: 35;
+    }
+    
+    .engagements1 {
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(117, 117, 117, 0.5);
+        width: 12em;
+        padding-top: 100px;
+        padding-left: 25px;
+        padding-right: 25px;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .engagements1 p {
+        font-size: 17px;
+    
+    }
+
+    
+.reseaumobile {
+    padding: 20px;
+    display: block;
+    text-align: center;
+}
+
+.reseaumobile img {
+    width: 30px;
+    padding-right:10px ;
+
+   
+}
+
+.facebook {
+    padding-top: 5px;
+    padding-left: 0px;
+}
+.facebook a img {
+    width: 25px;
+
+}
+
+        
+      }
+
+</style>
+
+
+
+</head>
+<body>
+
+<header>
+
+  <nav>
+    <!----------------- LOGO ------------------->
+       <div class="logo">
+          <br>
+        <a href=""><img src="img/Bella_Pasta1.png" alt="logoBellaPasta"></a>
+        <p id="namebrand">Bella Pasta</p>
+        <hr>
+       </div>
+
+    <!------------------ MENU ------------------->
+      <ul>
+      <a href="#Hello">  <li>Accueil</li>  </a> 
+      <a href="#quisommesnous">  <li>Qui sommes-nous ?</li>  </a>
+      <a href="#qualité">  <li>La qualité, <br> notre marque de fabrique</li> </a>
+      <a href="#produits">  <li>Nos produits</li> </a>
+      <a href="#engagements">  <li>Nos Engagements</li> </a>
+      </ul>
+
+     <div class="reseau">
+         <a href="https://twitter.com/search?q=%23pasta" target="_blank"> <img src="img/twitter.png" alt="twitter"> </a>
+         <a href="https://www.youtube.com/watch?v=NHiqsrYkcuk" target="_blank"> <img src="img/youtube.png" alt="twitter"> </a>
+         <div class="facebook">
+          <a href="https://www.facebook.com/mezzodipastaofficiel/" target="_blank"> <img src="img/facebook.png" alt="twitter"> </a>
+         </div>
+     </div>
+    
+   </nav>
+
+
+<!------------------------ MOBILE NAVBAR ------------------------------------>
+
+   <div class="mobile">
+    <!----------------- LOGO ------------------->
+       <div class="logo">
+          <br>
+        <a href=""><img src="/img/Bella_Pasta1.png" alt="logoBellaPasta"></a>
+        <p id="namebrand">Bella Pasta</p>
+        <hr>
+       </div>
+
+    <!------------------ MENU ------------------->
+      <ul>
+      <a href="#Hello">  <img src="icon/home.png" alt="home" role="heading"> </a> 
+      <a href="#quisommesnous">  <img src="icon/presentation.png" alt="presentation" role="presentation"> </a>
+      <a href="#qualité">   <img src="icon/quality.png" alt="quality" role="presentation">  </a>
+      <a href="#produits">   <img src="icon/product.png" alt="product" role="product"> </a>
+      <a href="#engagements">  <img src="icon/engagement.png" alt="engagement" role="engagement"> </a>
+      </ul>
+
+     <div class="reseaumobile">
+         <a href="https://twitter.com/search?q=%23pasta" target="_blank"> <img src="img/twitter.png" alt="twitter"> </a>
+         <a href="https://www.youtube.com/watch?v=NHiqsrYkcuk" target="_blank"> <img src="img/youtube.png" alt="twitter"> </a>
+         <div class="facebook">
+          <a href="https://www.facebook.com/mezzodipastaofficiel/" target="_blank"> <img src="img/facebook.png" alt="twitter"> </a>
+         </div>
+     </div>
+    
+    </div>
+
+
+
+<div id="Hello">
+
+    <h1>Bella Pasta </h1>
+
+    <p >Bella Pasta, c'est le goût de l'Italie
+        mixé à un savoir-faire français.
+        <br><br>
+        
+        Nos produits viennent d'Italie 
+        mais les aliments sont produits en 
+        France.</p>
+
+
+        <p >
+
+            Les pâtes alimentaires sont des
+        aliments fabriqués à partir d'un
+        mélange pétri de farine, de semoule
+        de blé dur, d'épeautre, de blé noir,
+        de riz, de maïs ou d'autres types 
+        de céréales, d'eau et parfois d'œuf
+        et de sel.
+        </p>
+
+
+</div>
+
+
+</header>
+
+<main>
+
+
+<div id="quisommesnous">
+
+    <div class="explication">
+       <h1>Qui sommes-nous ?</h1>
+
+  <p>Bella Pasta a été crée en 1975 par 
+    Albert Bella. A l'époque, Bella Pasta
+    était une petite boutique de Paris
+    très apprécié dans le quartier latin 
+  </p>
+
+
+      <p>
+
+        Aujourd'hui, Bella Pasta est une 
+entreprise présente dans toutes
+l'Europe. N°3 des pâtes vendues
+sur le marché européen avec des
+collaborateurs dans le monde entier
+      </p>
+    </div>
+
+</div>
+
+
+
+<div id="qualité">
+
+  <div class="qualité1">
+         <h1>Notre qualité !</h1>
+
+          <p>Bella Pasta, c'est la qualité italienne
+          made in France. Un mix de culture
+         et de savoir-faire qui enjolivera
+          vos pupilles. Nos machines dernier
+          cri produisent des pâtes avec des
+        normes qui vous satisferont
+         </p>
+<br>
+
+       <p>
+
+         La qualité est notre mot d'ordre.
+        Nos clients ont la possibilité d'interagir
+        avec nous via les réseaux sociaux via 
+        Twitter, Facebook et YouTube.
+       </p>
+      <br>
+
+      <p>
+      Venez tester nos produits présents
+       dans tous les grandes surfaces
+      </p>
+  </div>
+
+</div>
+
+
+
+
+
+
+<div id="produits">
+
+  <div class="pate1">
+    <img src="img/pate1.jpg" class="patpat1">
+  
+    <img src="img/pate3.jpg" class="patpat2">
+  </div>
+
+  <div class="pate2">
+    <img src="img/pate2.jpg">
+  </div>
+
+
+
+
+  <img src="img/pasta.jpg" class="Patafix" alt="pasta">
+
+
+</div>
+
+
+
+
+<div id="engagements">
+
+  <div class="engagements1">
+         <h1>Nos engagements</h1>
+
+          <p>Nos produits sont made in France
+            et vous assure une protection
+            en prenant compte des lois du pays 
+            où le produit est vendu. 
+         </p>
+<br>
+
+       <p>
+
+        La qualité est notre mot d'ordre.
+        Nos clients ont la possibilité d'interagir
+        avec nous via les réseaux sociaux via 
+        Twitter, Facebook et YouTube.
+        
+       </p>
+      <br>
+
+      <p>
+      
+Venez tester nos produits présents
+dans tous les grandes surfaces
+      </p>
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</main>
+
+
+
+    
+</body>
+</html>
